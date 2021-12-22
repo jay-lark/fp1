@@ -33,4 +33,6 @@ func fp(url, token string) {
 		log.Println("Error while reading the response bytes:", err)
 	}
 	log.Println(string([]byte(body)))
+
+	return resp.Body
 }
